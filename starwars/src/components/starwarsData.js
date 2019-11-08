@@ -1,6 +1,17 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./Card";
+import styled from "styled-components";
+
+// styling
+const DivStyled = styled.div`
+
+  border: rgb(240, 192, 246) 1px solid;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+`;
 
 function StarwarsData() {
   const [starwarsChars, fetchStarwarsChars] = useState([]);
@@ -20,7 +31,7 @@ function StarwarsData() {
   }, []);
 
   return (
-    <div className="CardContainer">
+    <DivStyled className="CardContainer">
          
       {starwarsChars.map(character => {
         return (
@@ -34,7 +45,7 @@ function StarwarsData() {
         );
       })}
          
-    </div>
+    </DivStyled>
 
     //   <h3>Name: {props.name}</h3>
     //   <h3>Height: {props.height}</h3>
