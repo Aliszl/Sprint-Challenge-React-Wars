@@ -20,32 +20,27 @@ function StarwarsData() {
   }, []);
 
   return (
-     <div className ="CardContainer">
-       {
-        starwarsChars.map(character => {
-            return(
-               <Card 
-                
-                name={character.name} 
-                height={character.height}
-                mass={character.mass} 
-                hair_color={character.hair_color} 
-                skin_color={character.skin_color} 
-                
-                />
-            )
-        })}
-       </div>
+    <div className="CardContainer">
+         
+      {starwarsChars.map(character => {
+        return (
+          <Card
+            name={character.name}
+            height={character.height}
+            mass={character.mass}
+            hair_color={character.hair_color}
+            skin_color={character.skin_color}
+          />
+        );
+      })}
+         
+    </div>
 
-    
     //   <h3>Name: {props.name}</h3>
     //   <h3>Height: {props.height}</h3>
     //   <h3>Mass: {props.mass}</h3>
     //   <h3>Hair colour: {props.hair_color}</h3>
     //   <h3>Skin colour: {props.skin_color}</h3>
-      
-      
-    
   );
 }
 export default StarwarsData;
