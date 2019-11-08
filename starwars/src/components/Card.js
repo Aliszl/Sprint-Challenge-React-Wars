@@ -11,7 +11,7 @@ const StyledDiv = styled.div`
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     overflow: hidden;
     &:hover {
-    background-color: rgb(210, 180, 140);
+    background-color: rgba(210, 180, 140, 0.2);
 		}
     `
 

@@ -14,5 +14,5 @@
 1. Describe props.
         Props or properties are ‘immutable’ arguments, like a functions arguments that are  passed into a component via the render method (often the state of a parent component is passed down as  prop to a a child element)
 
-1. What are side effects, and how do you sync effects in a React component to state or prop changes?
+1. What are side effects, and how do you sync effects in                a React component to state or prop changes?
             Side effects are anything that must be computed , calculated or rendered in a component  (in addition to the function output itself) such as console.logs or data fetching(api requests). You use an effect hook to perform a side effect
